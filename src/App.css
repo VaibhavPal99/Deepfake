@@ -1,0 +1,108 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./assets/bg_deepfake.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px; /* Limiting the max width for better readability */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Adding a dark background for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white; /* Tomato color for the header */
+}
+
+.upload-box {
+  margin: 20px 0;
+}
+
+.upload-box input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.upload-box input[type="file"]:hover {
+  background-color: #444;
+}
+
+.frames-section {
+  margin-top: 30px;
+}
+
+.frames-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: white; /* Tomato color for section headers */
+}
+
+.scroll-container {
+  display: flex;
+  justify-content: center; /* Centers the thumbnails */
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  gap: 10px; /* Adds space between thumbnails */
+}
+
+.frame-thumbnail {
+  width: 120px; /* Slightly larger frame size */
+  height: 80px;
+  object-fit: cover; /* Ensures the image fits within the thumbnail size */
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.frame-thumbnail:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.video-player {
+  margin: 20px 0;
+}
+
+.slider-box {
+  margin: 30px 0;
+}
+
+.upload-btn {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.upload-btn:focus {
+  outline: none;
+}
